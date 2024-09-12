@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-view, intial-scale=1.0">
+        <title>Registeringsskjema</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Registeringsskjema</h1>
+        </header>
+
+        <form method="post" action="">
+            <label>
+                Navn:
+                <input type="text" name="navn" id="navn" placeholder="Amanda Stein" pattern="[A-Za-zæøåÆØÅ ]{2,}" required >
+            </label>
+
+            <label>
+                E-post:
+                <input type="email" navn="email" placeholder="example@example.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+            </label>
+
+            <label>
+                Passord:
+                <input type="password" navn="password" placeholder="******" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required >
+            </label>
+
+            <label>
+                Alder
+                <input type="number" name="age" min="18" max="99" required>
+            </label>
+
+            <label>
+                Telefonnummer
+                <input type="telephone" name="telephone" pattern="[0-9]{8,12}" required>
+            </label>
+
+            <label>
+                Fødselsdato
+                <input type="date" name="date" max="2023-12-31" required>
+            </label>
+
+            <label>
+                Kjønn:         
+                <label>
+                    Mann
+                    <input type="radio" name="valg"required>
+                </label>
+                
+                <label>
+                    Kvinne
+                    <input type="radio" name="valg"required>
+                </label>
+
+                <label>
+                    Annet
+                    <input type="radio" name="valg" required>
+                </label>
+            </label>
+
+            <select name="land" required> 
+                <option value="">Velg land...</option>
+                <option value="norge">Norge</option>
+                <option value="sverige">Sverige</option>
+                <option vale="danmark">Danmark</option>
+             </select>
+
+             <input type="submit" value="Send melding">
+
+        </form>
+
+    </body>
+
+</html>

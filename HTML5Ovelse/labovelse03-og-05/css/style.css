@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+}
+
+img{
+    width: 100%;
+    background-size: cover;
+}
+
+#kebab-title{
+    text-transform: uppercase; /* stor bokstaver*/
+    font-size: 50px; /* størrelse */
+    text-align: center;
+    color: #f8f8f8;
+    width: 100%;
+    text-shadow: 2px 2px blue;
+}
+
+#background {
+    background-image: url("../img/Kebab_med_kyllig.jpg");
+    padding: 5rem;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+    width: 30%;
+    background-color: rgb(175, 158, 158);
+    section{
+        margin-left: 50px;
+    }
+}
+
+
+#overskrift{
+    width: 100%;
+    margin-left: 50px;
+}
+
+#slik-do-gjor{
+    width: 60%;
+    margin-left: 40px;
+}
+
+.to-do-title {
+    color: rgb(7, 7, 18);
+}
+
+.to-do{
+    color: rgb(7, 7, 18);
+}
+
+footer{
+    color: #f8f8f8;
+    padding: 20px;
+    background-color: rgb(36, 33, 33);
+}

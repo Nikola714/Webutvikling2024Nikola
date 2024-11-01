@@ -1,5 +1,9 @@
-@use '_varibles.scss' as;
+@use 'variables' as *;
 
-@use '_mixins.scss' as;
+@use 'mixins' as *;
 
-@use '_base.scss' as;
+@use 'base' as *;
+
+div {
+    background-color: $gray;
+}

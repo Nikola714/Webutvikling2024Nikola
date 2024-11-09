@@ -3,17 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--linker til css ark med ikoner-->
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="ikoner/css/brands.css" rel="stylesheet">
+    <link href="ikoner/css/solid.css" rel="stylesheet">
+
+<!--linker til selv css til nettsted-->
+    <link href="css/style.css" rel="stylesheet">
+
+<!--titel til forside-->
     <title>Eksamen | Forside</title>
 </head>
 <body>
+
+<!--øvesrte del av nettside-->
+    <header>
+        <nav>
+
+             <!-- Søkskjema-->
+             <form>
+                <label> <!--både ikone og søkeboks er koblet sammen ved hjelp <label>< Dette betyr at et klikk på ikonet vil automatisk flytte fokus til søkefeltet.-->
+                    <input type="search" placeholder="Søk her">
+                    <i class="fa-solid fa-magnifying-glass" title="Søk"></i> <!--hjelpe hjelpeteknologi med å forstå mål-->
+                </label>
+            </form>
+
+    
+            <ul> <!--flere linker til forskjellig sted på nettside og logo tekst og ikoner-->
+                <li><a href="index.html"></a>Hjem</li>
+                <li><a href="product.html"></a>Produkter</li>
+                <li>Logo</li>
+                <li>Kategorier</li> <!--legg til link til sted med kategorier-->
+                <li>Kontakt oss</li> <!--legg til link til footer til kontakt om oss-->
+                <li><i class="fa-solid fa-user"></i></li>
+                <li><i class="fa-solid fa-heart"></i></li>
+                <li><a href="checkout.html"></a><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+
+        </nav>
+    </header>
+
+<!--footer = nedesrtst del av nettside-->
     <footer>
-        <p id="footer_logo">LOGO</p>
+        <h2>Logo</h2>
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-        <p id="kontakt">Kontakt</p>
-        <p class="kontaktinfo">Adresse:</p>
-        <p class="kontaktinfo">Telefon:</p>
-        <p class="kontaktinfo">E-post:</p>
-        <p class="kontaktinfo">Åpningstider:</p>
+        <section>
+            <h3>KONTAKT</h3>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i>Adresse:</li>
+                <li><i class="fa-solid fa-phone"></i>Telefon:</li>
+                <li><i class="fa-solid fa-envelope"></i>E-post:</li>
+                <li><i class="fa-solid fa-clock"></i>Åpningstider:</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>SNARVEIER</h3>
+                <ul>
+                    <li>Produkter</li>
+                    <li>Kategorier</li>
+                    <li>Kontakt oss</li>
+                </ul>
+        </section>
+
+        <section>
+            <h3>SOSIALE MEDIER</h3>
+            <ul>
+                <li><i class="fa-brands fa-square-instagram"></i></li>
+                <li><i class="fa-brands fa-square-facebook"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-square-pinterest"></i></li>
+
+            </ul>
+        </section>
     </footer>
 </body>
 </html>

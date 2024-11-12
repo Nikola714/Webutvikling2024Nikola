@@ -1,0 +1,32 @@
+
+/*
+.banner-bilde{
+
+}
+*/
+
+.scrolling-banner{
+    display: flex;
+    overflow: scroll;
+}
+
+.scrolling-banner header{
+    text-align: right;
+}
+
+/*
+.scrolling-banner header h2{
+    font-weight: bold;
+}
+*/
+
+
+
+
+.footer-informasjon{
+    text-transform: uppercase;
+}
+
+#footer{
+    background-color: rgb(126, 122, 122);
+}

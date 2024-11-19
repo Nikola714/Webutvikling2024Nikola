@@ -1,6 +1,4 @@
-body{
-    
-}
+
 
 /*banner starter*/
 .scrolling-banner img{
@@ -34,29 +32,75 @@ body{
 */
 
 
-/*våre mest populære produkter*/
+/*Seksjon 2 - våre mest populære produkter*/
 .populære_produkter{
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    
+    gap: 1rem;   
 }
 
 /*minste størrelse til alle articler med minst sjermen størrelse er 250*/
+
+/*populære prpdulter*/
 .populære_produkter article{
     flex-basis: 35%;
     flex-grow: 1;
     min-width: 150px;
 }
 
+/*link*/
+.populære_produkter article a{
+    position: relative;
+    display: inline-block;
+    color: #d2d2d2;
+}
+
+/*hjerte*/
+.populære_produkter article a i{
+    position: absolute;
+    top: 10px;
+    margin-left: 60px;
+    font-size: 30px;
+}
+
+/*bilde*/
 .populære_produkter img{
     width: 100%;
     max-width: 60%;
+    margin-left: 50px;
+}
+
+/*informasjon til produkter*/
+.populære_produkter article ul{
+    list-style: none;
+    margin-left: 10px;
+}
+
+
+
+/*Seksjon4*/
+#anmeldelser{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+}
+#anmeldelser .scroll-anmeldelser{
+    display: flex;
+    gap: 1rem;
+    overflow: scroll;
+}
+#anmeldelser .scroll-anmeldelser article{
+    min-width: 240px;  
+}
+#anmeldelser .scroll-anmeldelser article img{
+    width: 100%;
 }
 
 
 
 
+
+/*footer*/
 .footer-informasjon{
     text-transform: uppercase;
 }

@@ -32,6 +32,11 @@
 */
 
 
+
+
+
+
+
 /*Seksjon 2 - våre mest populære produkter*/
 .populære_produkter{
     display: flex;
@@ -41,7 +46,7 @@
 
 /*minste størrelse til alle articler med minst sjermen størrelse er 250*/
 
-/*populære prpdulter*/
+/*populære produkter*/
 .populære_produkter article{
     flex-basis: 35%;
     flex-grow: 1;
@@ -76,6 +81,15 @@
     margin-left: 10px;
 }
 
+/*842 Reviews*/
+.populære_produkter article h3{
+    margin-left: 50px;
+}
+
+
+
+
+
 
 
 /*Seksjon4*/
@@ -95,6 +109,17 @@
 #anmeldelser .scroll-anmeldelser article img{
     width: 100%;
 }
+
+
+
+
+
+
+
+/*Checkout*/
+
+
+
 
 
 

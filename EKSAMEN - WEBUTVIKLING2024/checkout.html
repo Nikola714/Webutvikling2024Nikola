@@ -27,7 +27,7 @@
                 </label>
             </form>
 
-            <!--MENY-flere linker til forskjellig sted på nettside og logo tekst og ikoner-->    
+<!--MENY-flere linker til forskjellig sted på nettside og logo tekst og ikoner-->    
             <nav>
                 <ul>
                     <li><a href="index.html">Hjem</a></li>
@@ -41,20 +41,42 @@
                 </ul>
             </nav>
     </header>
-            <!--MENY slutter-->
+<!--MENY slutter-->
 
                 <div>
                     <a href="index.html"><i class="fa-solid fa-arrow-left"></i>Fortsett og handle</a>
                 </div>
-    
+  
+<!--Velgte produkter starter-->
     <section>
         <h1>Kasse</h1>
-        <h2>Shoppingbagen din</h2>
+        <h2>1.Shoppingbagen din</h2>
         <article>
             <img src="img/kasse.jpg" alt="vinterfrakk">
-            
+            <h2>Product name</h2>
+            <h3>Kr 1999</h3> 
+            <h3>Farge: hvit</h3>
         </article>
+            <form method="post"> <!--sender data til serveren via POST-->
+                <!--Velg størrelse starter-->
+                <label>Størrelse</label>
+                    <select name="storrelse"> <!--sender informasjon at det som mann velger er størresle-->
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                <!--Velg størrelse slutter-->
+
+                <label>
+                    Antall:
+                    <input type="number" min="1" max="50" required>
+                </label>
+            </form>
     </section>
+<!--Velgte produkter slutter-->
 
 
 

@@ -75,11 +75,105 @@
                     <input type="number" min="1" max="50" required>
                 </label>
             </form>
+            <i class="fa-regular fa-heart"></i> <!--gjør det som grid slik at det skal vare ved siden produkct name og pris-->
+            <i class="fa-solid fa-trash"></i>
     </section>
 <!--Velgte produkter slutter-->
 
 
+<!--Informasjon om brukere til å sende produkter til starter-->
+    <section>
+        <h2>2. Dine opplysninger</h2>
+        <h3>Leveringsadresse</h3>
+        <form method="post">
+            <label for="fornavn">Fornavn</label>
+            <input type="text" name="navn" placeholder="Nora" id="fornavn" maxlength="50" required>
 
+            <label for="etternavn">Etternavn</label>
+            <input type="text" name="etternavn" id="etternavn" placeholder="Nordman" maxlength="50" required>
+
+            <label for="gateadresse">Gateadresse</label>
+            <input type="text" name="gateadresse" id="gateadresse" placeholder="BRA veien 6" maxlength="99" required>
+
+            <label for="postnummer">Postnummer</label>
+            <input type="number" name="postnummer" id="postnummer" placeholder="1567" required>
+
+            <label for="poststed">Poststed</label>
+            <input type="text" name="poststed" id="poststed" placeholder="Halden" maxlength="90" required>
+        </form>
+    </section>
+<!--Informasjon om brukere til å sende produkter til slutter-->
+
+
+<!--Kontaktinformasjon starter-->
+    <section>
+        <h2>Kontaktinformasjon</h2>
+        <form method="post">
+            <label for="email">E-post</label>
+            <input type="email" name="email" id="email" placeholder="Noranordam@hiof.no" required>
+
+            <label for="telefon">Telefon</label>
+            <input type="tel" name="telefon" id="telefon" placeholder="+47 *** ** ***" required>
+
+            <input type="submit" value="Lagre">
+        </form>
+    </section>
+<!--Kontaktinformajson slutter-->
+
+
+<!--Leveringsmetoder starter-->
+    <section>
+        <h2>Leveringsvalg</h2>
+        <form>
+            <fieldset>
+                <header>
+                    <input type="radio" name="valg">
+                    <label>Express Hjemlevering</label>
+                    <p>59 kr <i class="fa-solid fa-truck-fast"></i></p>
+                    <p>3-4 Virkedager</p>
+                    <p>Leveres hjem til deg etter frokost fra og med mandag til og med lørsdag. For levering til postnummer 4000 - 7999 er leveringstiden 2 arbeidsdager, for postnummer 8000 - 9999 er leveringstiden 3 arbeidsdager.</p>
+                </header>
+
+                <header>
+                    <input type="radio" name="valg">
+                    <label>Express Pakke til utleveringssted</label>
+                    <p>59 kr <i class="fa-solid fa-truck"></i></p>
+                    <p>1-3 Virkedager</p>
+                </header>
+
+                <header>
+                    <input type="radio" name="valg">
+                    <label>Standart Hjemlevering</label>
+                    <p>Gratis <i class="fa-solid fa-box-open"></i></p>
+                    <p>5-8 Virkedager</p>
+                    <p>Leveres hjem til deg etter frokost fra og med mandag til og med lørdag innen 4-7 hverdager</p>
+                </header>
+            </fieldset>
+        </form>
+     </section>
+<!--Leveringsmetoder slutterr-->
+
+
+<!--Betaling starter-->
+     <section>
+        <h2>4. Betaling</h2>
+        <h3>Betal med kort <i class="fa-regular fa-credit-card"></i></h3>
+        <form>
+            <label for="kontonummer">Kontonummer</label>
+            <input type="number" placeholder="1111 22 33334" id="kontonummer" required>
+
+            <label for="utlopsdato">Utløpsdato</label>
+            <input type="date" max="2027-12-31" id="utlopsdato" required>
+
+            <label>
+                CVC/CVV
+                <input type="number" placeholder="CVC/CVV" required>
+            </label>
+        </form>
+
+        
+     </section>
+<!--Betaling slutter-->
 
 
 

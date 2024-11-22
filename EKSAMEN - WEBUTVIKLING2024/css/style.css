@@ -1,15 +1,24 @@
+*{
+    max-width: 1200px;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+
 
 
 /*banner starter*/
-.scrolling-banner img{
-    position: relative;
-}
-
 .scrolling-banner{
     display: flex;
     overflow: scroll;
-    width: 90%;
-    max-width: 100%; 
+    max-width: 70%; 
+}
+
+
+.scrolling-banner img{
+    position: relative;
+    max-width: 100%;
 }
 
 .scrolling-banner header{
@@ -88,12 +97,13 @@
 }
 
 
+/*Seksjon 3 kategori*/
 
 
 
 
 
-/*Seksjon4*/
+/*Seksjon4 Anmeldelser*/
 #anmeldelser{
     display: flex;
     flex-wrap: wrap;
@@ -109,6 +119,7 @@
 }
 #anmeldelser .scroll-anmeldelser article img{
     width: 100%;
+    max-width: 150px;
 }
 
 
@@ -127,11 +138,13 @@
 
 
 /*footer*/
+#footer{
+    background-color: rgb(126, 122, 122);
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .footer-informasjon{
     text-transform: uppercase;
 }
 
-#footer{
-    background-color: rgb(126, 122, 122);
-    display: flex;
-}

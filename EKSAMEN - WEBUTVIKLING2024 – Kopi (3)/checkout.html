@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--linker til css ark med ikoner-->
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="ikoner/css/brands.css" rel="stylesheet">
+    <link href="ikoner/css/solid.css" rel="stylesheet">
+    <link href="ikoner/css/regular.css" rel="stylesheet">
+
+<!--linker til selv css til nettsted-->
+    <link href="css/style.css" rel="stylesheet">
+
+<!--titel til forside-->
+    <title>Eksamen | Kasse</title>
+</head>
+<body>
+
+<!--øvesrte del av nettside-->
+    <header>
+            <!-- Søkskjema-->
+             <form>
+                <label> <!--både ikone og søkeboks er koblet sammen ved hjelp <label>< Dette betyr at et klikk på ikonet vil automatisk flytte fokus til søkefeltet.-->
+                    <input type="search" placeholder="Søk her">
+                    <i class="fa-solid fa-magnifying-glass" title="Søk"></i> <!--hjelpe hjelpeteknologi med å forstå mål-->
+                </label>
+            </form>
+
+<!--MENY-flere linker til forskjellig sted på nettside og logo tekst og ikoner-->    
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#populære_produkter-container">Produkter</a></li>
+                    <li>Logo</li>
+                    <li><a href="#category-container">Kategorier</a></li> <!--legg til link til sted med kategorier-->
+                    <li><a href="#footer">Kontakt oss</a></li> <!--link til footer-->
+                    <li><i class="fa-solid fa-user"></i></li>
+                    <li><i class="fa-solid fa-heart"></i></li>
+                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+    </header>
+<!--MENY slutter-->
+
+                <div>
+                    <a href="index.html"><i class="fa-solid fa-arrow-left"></i>Fortsett og handle</a>
+                </div>
+  
+<!--Velgte produkter starter-->
+    <section>
+        <h1>Kasse</h1>
+        <h2>1.Shoppingbagen din</h2>
+        <article>
+            <img src="img/kasse.jpg" alt="vinterfrakk">
+            <h2>Product name</h2>
+            <h3>Kr 1999</h3> 
+            <h3>Farge: hvit</h3>
+        </article>
+            <form method="post"> <!--sender data til serveren via POST-->
+                <!--Velg størrelse starter-->
+                <label>Størrelse</label>
+                    <select name="storrelse"> <!--sender informasjon at det som mann velger er størresle-->
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                <!--Velg størrelse slutter-->
+
+                <label>
+                    Antall:
+                    <input type="number" min="1" max="50" required>
+                </label>
+            </form>
+            <i class="fa-regular fa-heart"></i> <!--gjør det som grid slik at det skal vare ved siden produkct name og pris-->
+            <i class="fa-solid fa-trash"></i>
+    </section>
+<!--Velgte produkter slutter-->
+
+
+<!--Informasjon om brukere til å sende produkter til starter-->
+    <section>
+        <h2>2. Dine opplysninger</h2>
+        <h3>Leveringsadresse</h3>
+        <form method="post">
+            <label for="fornavn">Fornavn</label>
+            <input type="text" name="navn" placeholder="Nora" id="fornavn" maxlength="50" required>
+
+            <label for="etternavn">Etternavn</label>
+            <input type="text" name="etternavn" id="etternavn" placeholder="Nordman" maxlength="50" required>
+
+            <label for="gateadresse">Gateadresse</label>
+            <input type="text" name="gateadresse" id="gateadresse" placeholder="BRA veien 6" maxlength="99" required>
+
+            <label for="postnummer">Postnummer</label>
+            <input type="number" name="postnummer" id="postnummer" placeholder="1567" required>
+
+            <label for="poststed">Poststed</label>
+            <input type="text" name="poststed" id="poststed" placeholder="Halden" maxlength="90" required>
+        </form>
+    </section>
+<!--Informasjon om brukere til å sende produkter til slutter-->
+
+
+<!--Kontaktinformasjon starter-->
+    <section>
+        <h2>Kontaktinformasjon</h2>
+        <form method="post">
+            <label for="email">E-post</label>
+            <input type="email" name="email" id="email" placeholder="Noranordam@hiof.no" required>
+
+            <label for="telefon">Telefon</label>
+            <input type="tel" name="telefon" id="telefon" placeholder="+47 *** ** ***" required>
+
+            <input type="submit" value="Lagre">
+            <input type="reset" value="Avbrytt">
+        </form>
+    </section>
+<!--Kontaktinformajson slutter-->
+
+
+<!--Leveringsmetoder starter-->
+    <section>
+        <h2>Leveringsvalg</h2>
+        <form>
+            <fieldset>
+                <header>
+                    <input type="radio" name="valg">
+                    <label>Express Hjemlevering</label>
+                    <p>59 kr <i class="fa-solid fa-truck-fast"></i></p>
+                    <p>3-4 Virkedager</p>
+                    <p>Leveres hjem til deg etter frokost fra og med mandag til og med lørsdag. For levering til postnummer 4000 - 7999 er leveringstiden 2 arbeidsdager, for postnummer 8000 - 9999 er leveringstiden 3 arbeidsdager.</p>
+                </header>
+
+                <header>
+                    <input type="radio" name="valg">
+                    <label>Express Pakke til utleveringssted</label>
+                    <p>59 kr <i class="fa-solid fa-truck"></i></p>
+                    <p>1-3 Virkedager</p>
+                </header>
+
+                <header>
+                    <input type="radio" name="valg">
+                    <label>Standart Hjemlevering</label>
+                    <p>Gratis <i class="fa-solid fa-box-open"></i></p>
+                    <p>5-8 Virkedager</p>
+                    <p>Leveres hjem til deg etter frokost fra og med mandag til og med lørdag innen 4-7 hverdager</p>
+                </header>
+            </fieldset>
+        </form>
+     </section>
+<!--Leveringsmetoder slutterr-->
+
+
+<!--Betaling starter-->
+     <section>
+        <h2>4. Betaling</h2>
+        <h3>Betal med kort <i class="fa-regular fa-credit-card"></i></h3>
+        <form>
+            <label for="kontonummer">Kontonummer</label>
+            <input type="number" placeholder="1111 22 33334" id="kontonummer" required>
+
+            <label for="utlopsdato">Utløpsdato</label>
+            <input type="date" max="2027-12-31" id="utlopsdato" required>
+
+            <label>
+                CVC/CVV
+                <input type="number" placeholder="CVC/CVV" required>
+            </label>
+        </form>
+
+        <!--Pris inkludert mva starter-->
+        <h4>Å betale inkl. mva</h4>
+        <h2>1 199 kr</h2>
+        <button>Fullfør kjøp</button>
+        <h4>Du bekrefter herved at opplusningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger</h4>
+        <form>
+            <label>
+                <input type="checkbox">
+                Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+            </label>
+
+            <label>
+                <input type="checkbox" required>
+                Jeg bekrefter at jeg har skrevet riktig informajson
+            </label>
+        </form>
+        
+        <!--Pris inkludert mva slutter-->
+
+
+     </section>
+<!--Betaling slutter-->
+
+
+
+
+
+<!--footer starter-->
+<footer id="footer">
+    <h2>Logo</h2>
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+    <section>
+        <h3 class="footer-informasjon">Kontakt</h3>
+        <ul>
+            <li><i class="fa-solid fa-location-dot"></i>Adresse:</li>
+            <li><i class="fa-solid fa-phone"></i>Telefon:</li>
+            <li><i class="fa-solid fa-envelope"></i>E-post:</li>
+            <li><i class="fa-solid fa-clock"></i>Åpningstider:</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3 class="footer-informasjon">Snarveier</h3>
+        <nav>
+            <ul>
+                <li>Produkter</li>
+                <li>Kategorier</li>
+                <li>Kontakt oss</li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <h3 class="footer-informasjon">Sosiale medier</h3>
+        <ul>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://no.pinterest.com/" target="blank"><i class="fa-brands fa-square-pinterest"></i></a></li>
+
+        </ul>
+    </section>
+</footer>
+<!--footer slutter-->
+</body>
+</html>

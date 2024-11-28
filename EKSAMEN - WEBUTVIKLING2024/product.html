@@ -18,22 +18,22 @@
 <body>
 
 <!--øvesrte del av nettside-->
-            <header>
-                    <!-- Søkskjema-->
-                    <form>
-                        <label> <!--både ikone og søkeboks er koblet sammen ved hjelp <label>< Dette betyr at et klikk på ikonet vil automatisk flytte fokus til søkefeltet.-->
-                            <input type="search" placeholder="Søk her">
-                            <i class="fa-solid fa-magnifying-glass" title="Søk"></i> <!--hjelpe hjelpeteknologi med å forstå mål-->
-                        </label>
-                    </form>
+            <header id="overste_delen">
+                <!-- Søkskjema-->
+                <form>
+                    <label> <!--både ikone og søkeboks er koblet sammen ved hjelp <label>< Dette betyr at et klikk på ikonet vil automatisk flytte fokus til søkefeltet.-->
+                        <i class="fa-solid fa-magnifying-glass" title="Søk"></i> <!--hjelpe hjelpeteknologi med å forstå mål-->
+                        <input type="search" placeholder="Søk her">
+                    </label>
+                </form>
 
                     <!--MENY-flere linker til forskjellig sted på nettside og logo tekst og ikoner-->    
                     <nav>
                         <ul>
                             <li><a href="index.html">Hjem</a></li>
-                            <li><a href="#populære_produkter-container">Produkter</a></li>
+                            <li><a href="index.html#populære_produkter-container">Produkter</a></li>
                             <li><a href="index.html">Logo</a></li>
-                            <li><a href="#category-container">Kategorier</a></li> 
+                            <li><a href="index.html#category-container">Kategorier</a></li> 
                             <li><a href="#footer">Kontakt oss</a></li>
                             <li><i class="fa-solid fa-user"></i></li>
                             <li><i class="fa-solid fa-heart"></i></li>
@@ -60,11 +60,24 @@
 
 
 <!--Produkter starter-->
-            <section>
-                <header>
-
+            <main class="vinterfrakk-container">
+                <header class="venstre-container-produkt">
+                    <img src="img/kasse.jpg" alt="vinterfrakk" id="hoved-bilde-produkt">
+                    <img src="img/kasse.jpg" alt="vinterfrakk">
+                    <img src="img/kasse.jpg" alt="vinterfrakk">
+                    <img src="img/kasse.jpg" alt="vinterfrakk">
                 </header>
-            </section>
+                <aside>
+                    <section>
+                        <h2>Vinterfrakk</h2>
+                        <a href="index.html#logo">Markenavn</a>
+                        <h3> 5 195 kr inkl. mva.</h3>
+                        <h4>Farge: hvit</h4>
+                    </section>
+                </aside>
+            </main>
+
+            
 <!--Produkter slutter-->
 
             <!--footer starter-->

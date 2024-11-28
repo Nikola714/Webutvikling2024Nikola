@@ -9,6 +9,17 @@ body{
 
 @media only screen and (max-width: 800px){
 
+    /*søk*/
+    #overste_delen form label{
+        border: 1px solid rgb(19, 19, 19);
+        padding: 0.5rem;
+    }
+
+    #overste_delen form label input{
+        border: 0;
+    }
+
+
     /*banner starter*/
     .scrolling-banner{
         display: flex;
@@ -160,6 +171,23 @@ body{
         list-style: none;
     }
 
+    /*Produkter*/
+    .venstre-container-produkt{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem; 
+    }
+
+    .venstre-container-produkt img{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #hoved-bilde{
+        flex-basis: 100%;
+    }
+
 
 
 
@@ -190,4 +218,78 @@ body{
     }
 
 
+}
+
+@media only screen and (min-width: 800px){
+    /*søk*/
+
+    .overste_delen nav ul{
+        display: flex; /* Bruker flexbox for å arrangere elementene */
+        justify-content: space-between; /* Plasserer elementene med plass mellom seg */
+        flex-wrap: wrap; /* Tillater bryting til neste rad hvis nødvendig */
+        gap: 1rem; /* Legger til et mellomrom på 1rem mellom elementene */
+    }
+
+    .overste_delen form label{
+        border: 1px solid rgb(19, 19, 19);
+        padding: 1rem;
+    }
+
+    .overste_delen form label input{
+        border: 0;
+    }
+
+    .overste_delen nav ul{
+        list-style: none;
+        
+    }
+
+    /*Produkt side starter*/
+    #navigasjon nav ul{
+        list-style: none;
+    }
+
+    .vinterfrakk-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 40px;
+    }
+    
+    .venstre-container-produkt{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem; 
+    }
+
+    .venstre-container-produkt img{
+        flex-basis: 31%;
+        width: 31%;
+    }
+
+    #hoved-bilde{
+        flex-basis: 100%;
+    }
+    
+
+    .venstre-container-produkt{
+        width: 60%;
+    }
+
+
+    #hoved-bilde-produkt{
+        flex-basis: 100%;
+
+    }
+
+    
+
+    aside{
+        width: 40%;
+        section{
+            margin-left: 100px;
+        } 
+    }
+    /*Produkt side slutter*/
+    
 }

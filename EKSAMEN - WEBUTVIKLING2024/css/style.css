@@ -31,6 +31,8 @@ body{
         flex-direction: column;
         gap: 1rem;
     }
+
+    
     /*banner slutter*/
 
 
@@ -151,7 +153,12 @@ body{
     }
 
 
+    /*Prodyct side*/
 
+    /*Navigajson*/
+    #navigasjon nav ul{
+        list-style: none;
+    }
 
 
 

@@ -1,0 +1,186 @@
+*{
+    max-width: 1200px;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+@media only screen and (max-width: 800px){
+
+    /*banner starter*/
+    .scrolling-banner{
+        display: flex;
+        overflow: scroll;
+        position: relative;
+    }
+
+
+    .banner-bilde{
+        width: 100%;
+    }
+
+    .scrolling-banner header{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    /*banner slutter*/
+
+
+    /*
+    .scrolling-banner header h2{
+        font-weight: bold;
+    }
+    */
+
+
+
+
+
+
+
+    /*Seksjon 2 - våre mest populære produkter*/
+    #populære_produkter-container {
+        text-align: center;
+    }
+
+    #nye_produkter{
+        list-style: none;
+        background-color: #a61111;
+        padding: 1rem;
+        border-radius: 50rem;
+        width: 8rem;
+    }
+    
+    #spesielt_pris{
+        list-style: none;
+        background-color: #a61111;
+        padding: 1rem;
+        border-radius: 50rem;
+        width: 8rem;
+    }
+
+    #bestselgere{
+        list-style: none;
+        background-color: #a61111;
+        padding: 1rem;
+        border-radius: 50rem;
+        width: 8rem;
+    }
+
+    .populære_produkter{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;   
+    }
+
+    /*minste størrelse til alle articler med minst sjermen størrelse er 250*/
+
+    /*populære produkter*/
+    .populære_produkter article{
+        flex-basis: 35%;
+        flex-grow: 1;
+        min-width: 150px;
+    }
+
+    /*link*/
+    .populære_produkter article a{
+        position: relative;
+        display: inline-block;
+        color: #d2d2d2;
+    }
+
+    /*hjerte*/
+    .populære_produkter article a i{
+        position: absolute;
+        top: 10px;
+        margin-left: 60px;
+        font-size: 30px;
+    }
+
+    /*bilde*/
+    .populære_produkter img{
+        width: 100%;
+        max-width: 60%;
+        margin-left: 50px;
+        border-radius: 10%;
+    }
+
+    /*informasjon til produkter*/
+    .populære_produkter article ul{
+        list-style: none;
+        margin-left: 10px;
+    }
+
+    /*842 Reviews*/
+    .populære_produkter article h3{
+        margin-left: 50px;
+    }
+
+
+    /*Seksjon 3 kategori*/
+
+
+
+
+
+    /*Seksjon4 Anmeldelser*/
+    #anmeldelser{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem; 
+    }
+    #anmeldelser .scroll-anmeldelser{
+        display: flex;
+        gap: 1rem;
+        overflow: scroll;
+    }
+    #anmeldelser .scroll-anmeldelser article{
+        min-width: 240px;  
+    }
+    #anmeldelser .scroll-anmeldelser article img{
+        width: 100%;
+        max-width: 150px;
+    }
+
+
+
+
+
+
+
+    /*Checkout*/
+
+
+
+
+
+
+
+
+    /*footer*/
+    #footer{
+        background-color: rgb(126, 122, 122);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1%;
+    }
+
+    #footer ul{
+        list-style: none;
+    }
+
+    .footer-informasjon{
+        text-transform: uppercase;
+    }
+
+
+}

@@ -20,14 +20,6 @@
 <!--øvesrte del av nettside starter-->
             <header class="overste_delen">
                 <nav>
-                    <!-- Søkskjema-->
-                    <form>
-                        <label> <!--både ikone og søkeboks er koblet sammen ved hjelp <label>< Dette betyr at et klikk på ikonet vil automatisk flytte fokus til søkefeltet.-->
-                            <i class="fa-solid fa-magnifying-glass" title="Søk"></i> <!--hjelpe hjelpeteknologi med å forstå mål-->
-                            <input type="search" placeholder="Søk her">
-                        </label>
-                    </form>
-
                     <!--MENY-flere linker til forskjellig sted på nettside og logo tekst og ikoner-->    
                     
                     <ul>
@@ -40,6 +32,13 @@
                         <li><i class="fa-solid fa-heart"></i></li>
                         <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     </ul>
+                    <!-- Søkskjema-->
+                    <form>
+                        <label> <!--både ikone og søkeboks er koblet sammen ved hjelp <label>< Dette betyr at et klikk på ikonet vil automatisk flytte fokus til søkefeltet.-->
+                            <i class="fa-solid fa-magnifying-glass" title="Søk"></i> <!--hjelpe hjelpeteknologi med å forstå mål-->
+                            <input type="search" placeholder="Søk her">
+                        </label>
+                    </form>
                 </nav>
             </header>
                     <!--MENY slutter-->
@@ -47,52 +46,14 @@
 
 <!--banner starter-->
             <main>
-                <section class="scrolling-banner">
-                    <img class="banner-bilde" src="img/banner1.webp" alt="banner med vinter tilbud"> 
-                    <header>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                        <i class="fa-solid fa-arrow-left"></i>
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</h4>
-                        <a href="#">Se vårt vintertilbud</a>
+                    <header class="stadig-banner">
+                        <img class="banner-bilde" src="img/banner1.webp" alt="banner med vinter tilbud"> 
+                        <article>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                            <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</h4>
+                            <a href="#" class="link_i_banner">Se vårt vintertilbud</a>
+                        </article>
                     </header>
-
-                    <img class="banner-bilde" src="img/banner2.webp" alt="banner med vinter tilbud"> 
-                    <header>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                        <i class="fa-solid fa-arrow-left"></i>
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</h4>
-                        <a href="#">Se vårt vintertilbud</a>
-                    </header>
-
-                    <img class="banner-bilde" src="img/banner1.webp" alt="banner med vinter tilbud"> 
-                    <header>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                        <i class="fa-solid fa-arrow-left"></i>
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</h4>
-                        <a href="#">Se vårt vintertilbud</a>
-                    </header>
-
-                    <img class="banner-bilde" src="img/banner2.webp" alt="banner med vinter tilbud"> 
-                    <header>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                        <i class="fa-solid fa-arrow-left"></i>
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</h4>
-                        <a href="#">Se vårt vintertilbud</a>
-                    </header>
-
-                    <img class="banner-bilde" src="img/banner1.webp" alt="banner med vinter tilbud"> 
-                    <header>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                        <i class="fa-solid fa-arrow-left"></i>
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</h4>
-                        <a href="#">Se vårt vintertilbud</a>
-                    </header>
-                </section>
             </main>
 <!--banner slutter-->
 
@@ -101,10 +62,10 @@
                 <h2>Våre mest polulære produkter</h2>
                 <h4>Oppdag det beste av det beste</h4>
                 <nav>
-                    <ul>
-                        <li id="nye_produkter"><a href="#">Nye Produkter</a></li>
-                        <li id="spesielt_pris"><a href="#">Spesielt Pris</a></li>
-                        <li id="bestselgere"><a href="#">Bestselgere</a></li>
+                    <ul id="sortert">
+                        <li><a href="#">Nye Produkter</a></li>
+                        <li><a href="#">Spesielt Pris</a></li>
+                        <li><a href="#">Bestselgere</a></li>
                     </ul>
                 </nav>
 
@@ -221,24 +182,28 @@
 <!--Seksjon2 slutter-->
 
 <!--Seksjon3 starter-->
-            <section id="category-container">
-                <h2>Våre mest populære kategorier</h2>
-                <h4>Oppdag det beste av det beste</h4>
-                <article id="category1-grid">
-                    <h3>Category 1</h3>
-                </article>
-                <article id="category2-grid">
-                    <h3>Category 2</h3>
-                </article>
-                <article id="category3-grid">
-                    <h3>Category 3</h3>
-                </article>
-                <article id="category4-grid">
-                    <h3>Category 4</h3>
-                </article>
-                <article id="category5-grid">
-                    <h3>Category 5</h3>
-                </article>
+            <section>
+                <header id="category-container">
+                    <h2>Våre mest populære kategorier</h2>
+                    <h4>Oppdag det beste av det beste</h4>
+                </header> 
+                <header id="category-grid-container">
+                        <article id="category1-grid">
+                            <h3>Category 1</h3>
+                        </article>
+                        <article id="category2-grid">
+                            <h3>Category 2</h3>
+                        </article>
+                        <article id="category3-grid">
+                            <h3>Category 3</h3>
+                        </article>
+                        <article id="category4-grid">
+                            <h3>Category 4</h3>
+                        </article>
+                        <article id="category5-grid">
+                            <h3>Category 5</h3>
+                        </article>
+                </header>   
             </section>
 <!--Seksjon3 slutter-->
 

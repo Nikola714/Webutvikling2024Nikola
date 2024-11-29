@@ -13,54 +13,54 @@
     <link href="css/style.css" rel="stylesheet">
 
 <!--titel til forside-->
-    <title>Eksamen | Kasse side</title>
+    <title>Eksamen | Forside</title>
 </head>
 <body>
 
-<!--øvesrte del av nettside startrer-->
-            <header id="overste_delen">
-                <!-- Søkskjema-->
-                <form>
-                    <label> <!--både ikone og søkeboks er koblet sammen ved hjelp <label>< Dette betyr at et klikk på ikonet vil automatisk flytte fokus til søkefeltet.-->
-                        <i class="fa-solid fa-magnifying-glass" title="Søk"></i> <!--hjelpe hjelpeteknologi med å forstå mål-->
-                        <input type="search" placeholder="Søk her">
-                    </label>
-                </form>
-
+<!--øvesrte del av nettside starter-->
+            <header class="overste_delen">
+                <nav>
                     <!--MENY-flere linker til forskjellig sted på nettside og logo tekst og ikoner-->    
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Hjem</a></li>
-                            <li><a href="index.html#populære_produkter-container">Produkter</a></li>
-                            <li><a href="index.html">Logo</a></li>
-                            <li><a href="index.html#category-container">Kategorier</a></li> 
-                            <li><a href="#footer">Kontakt oss</a></li>
-                            <li><i class="fa-solid fa-user"></i></li>
-                            <li><i class="fa-solid fa-heart"></i></li>
-                            <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                        </ul>
-                    </nav>
+                    
+                    <ul>
+                        <li><a href="index.html">Hjem</a></li>
+                        <li><a href="index.html#populære_produkter-container">Produkter</a></li>
+                        <li><a href="index.html">Logo</a></li>
+                        <li><a href="index.html#category-container">Kategorier</a></li> 
+                        <li><a href="#footer">Kontakt oss</a></li>
+                        <li><i class="fa-solid fa-user"></i></li>
+                        <li><i class="fa-solid fa-heart"></i></li>
+                        <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                    <!-- Søkskjema-->
+                    <form>
+                        <label> <!--både ikone og søkeboks er koblet sammen ved hjelp <label>< Dette betyr at et klikk på ikonet vil automatisk flytte fokus til søkefeltet.-->
+                            <i class="fa-solid fa-magnifying-glass" title="Søk"></i> <!--hjelpe hjelpeteknologi med å forstå mål-->
+                            <input type="search" placeholder="Søk her">
+                        </label>
+                    </form>
+                </nav>
             </header>
                     <!--MENY slutter-->
 <!--øvesrte del av nettside slutter-->
 
-                <div>
+                <header id="navigasjon2">
                     <a href="index.html"><i class="fa-solid fa-arrow-left"></i>Fortsett og handle</a>
-                </div>
+                </header>
   
 <!--Velgte produkter starter-->
     <section>
         <h1>Kasse</h1>
         <h2>1.Shoppingbagen din</h2>
         <article>
-            <img src="img/kasse.jpg" alt="vinterfrakk">
+            <img class="hoved_bilde2" src="img/kasse.jpg" alt="vinterfrakk">
             <h2>Product name</h2>
             <h3>Kr 1999</h3> 
             <h3>Farge: hvit</h3>
         </article>
             <form method="post"> <!--sender data til serveren via POST-->
                 <!--Velg størrelse starter-->
-                <label>Størrelse</label>
+                <label>Størrelse:</label>
                     <select name="storrelse"> <!--sender informasjon at det som mann velger er størresle-->
                         <option value="XS">XS</option>
                         <option value="S">S</option>
@@ -78,14 +78,98 @@
             </form>
             <i class="fa-regular fa-heart"></i> <!--gjør det som grid slik at det skal vare ved siden produkct name og pris-->
             <i class="fa-solid fa-trash"></i>
+<article>
+            <img class="hoved_bilde2" src="img/kasse.jpg" alt="vinterfrakk">
+            <h2>Product name</h2>
+            <h3>Kr 1999</h3> 
+            <h3>Farge: hvit</h3>
+        </article>
+            <form method="post"> <!--sender data til serveren via POST-->
+                <!--Velg størrelse starter-->
+                <label>Størrelse:</label>
+                    <select name="storrelse"> <!--sender informasjon at det som mann velger er størresle-->
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                <!--Velg størrelse slutter-->
+
+                <label>
+                    Antall:
+                    <input type="number" min="1" max="50" required>
+                </label>
+            </form>
+            <i class="fa-regular fa-heart"></i> <!--gjør det som grid slik at det skal vare ved siden produkct name og pris-->
+            <i class="fa-solid fa-trash"></i>
+
+
+            <article>
+                <img class="hoved_bilde2" src="img/kasse.jpg" alt="vinterfrakk">
+                <h2>Product name</h2>
+                <h3>Kr 1999</h3> 
+                <h3>Farge: hvit</h3>
+            </article>
+                <form method="post"> <!--sender data til serveren via POST-->
+                    <!--Velg størrelse starter-->
+                    <label>Størrelse:</label>
+                        <select name="storrelse"> <!--sender informasjon at det som mann velger er størresle-->
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    <!--Velg størrelse slutter-->
+    
+                    <label>
+                        Antall:
+                        <input type="number" min="1" max="50" required>
+                    </label>
+                </form>
+                <i class="fa-regular fa-heart"></i> <!--gjør det som grid slik at det skal vare ved siden produkct name og pris-->
+                <i class="fa-solid fa-trash"></i>
+
+                <article>
+                    <img class="hoved_bilde2" src="img/kasse.jpg" alt="vinterfrakk">
+                    <h2>Product name</h2>
+                    <h3>Kr 1999</h3> 
+                    <h3>Farge: hvit</h3>
+                </article>
+                    <form method="post"> <!--sender data til serveren via POST-->
+                        <!--Velg størrelse starter-->
+                        <label>Størrelse:</label>
+                            <select name="storrelse"> <!--sender informasjon at det som mann velger er størresle-->
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        <!--Velg størrelse slutter-->
+        
+                        <label>
+                            Antall:
+                            <input type="number" min="1" max="50" required>
+                        </label>
+                    </form>
+                    <i class="fa-regular fa-heart"></i> <!--gjør det som grid slik at det skal vare ved siden produkct name og pris-->
+                    <i class="fa-solid fa-trash"></i>
+
     </section>
 <!--Velgte produkter slutter-->
 
 
 <!--Informasjon om brukere til å sende produkter til starter-->
     <section>
-        <h2>2. Dine opplysninger</h2>
-        <h3>Leveringsadresse</h3>
+        <header id="opplysninger">
+            <h2>2. Dine opplysninger</h2>
+            <h3>Leveringsadresse</h3>
+        </header>
         <form method="post">
             <label for="fornavn">Fornavn</label>
             <input type="text" name="navn" placeholder="Nora" id="fornavn" maxlength="50" required>
@@ -180,13 +264,13 @@
         <h4>Du bekrefter herved at opplusningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger</h4>
         <form>
             <label>
-                <input type="checkbox">
-                Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+                <input type="checkbox" required>
+                Ja, jeg godtar vilkårene
             </label>
 
             <label>
-                <input type="checkbox" required>
-                Jeg bekrefter at jeg har skrevet riktig informajson
+                <input type="checkbox">
+                Jeg takk! Send nyhetsbrev til meg
             </label>
         </form>
         

@@ -1,1 +1,38 @@
+@media only screen  and (max-width: 500px){
+    /*toppområde starter*/
+    .toppomrode {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+        max-width: 1000px;
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    nav ul li a{
+        color: #252525;
+    }
+    nav img{
+        max-width: 100%;
+        width: 90px;
+    }
+    /*toppområde slutterr*/
 
+    /*andre starter*/
+    .andreomrode{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+        max-width: 1000px;
+        margin-top: 50px;
+    }
+    
+    /*andre starter*/
+}

@@ -41,15 +41,20 @@
 
     /*footer starter*/
         #footer{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
             width: 100%;
             max-width: 1000px;
             background-color:  #252525;
-            justify-content: center;
+            
+        }
+            .flags{
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                
+            
                 p img {
-                    max-width: 80px;
+                    max-width: 50px;
                     
                 }
                 p{
@@ -60,8 +65,35 @@
                     gap: 1rem;
                     
                 }
+            }
 
-        }
+            .overskrift{
+                color: #fff;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            
+           .betalingsmetoder{
+            color: #fff;
+            margin-left: 40px;
+                i{
+                    font-size: 40px;
+                }
+                section i{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 1rem;
+                    width: 100%;
+                    
+                }
+
+           }
+           .nyheter_og_tilbud{
+            margin-left: 40px;
+           }
+
+        
         
     /*footer slutter*/
 }

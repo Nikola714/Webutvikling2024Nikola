@@ -69,13 +69,60 @@
         background-image: url('../img/sea-4768869_1920.jpg');
     }
 
+    /*
     .søk_skjema{
 
     }
+    */
 
 
-
-
+    /*Kampanjesekjon starter*/
+    .kampanje{
+        background-image: url('../img/holiday-2733322_1280.jpg');
+        background-size: cover;
+        height: 350px;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 28px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .kampanjetekst h1{
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    .kampanjeteksth2{
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    .kampanjetekst h3{
+        font-weight: lighter;
+        font-size: large;
+    }
+    .kampanjetekst{
+        background-color: #52d3f0 ;
+        text-align: center;
+        border-radius: 30px;
+        padding: 15px;
+        box-sizing: border-box;
+        width: 80%;
+    }
+    #bestill{
+        background-color: #ffcc00;
+        color: #252525;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 7px;
+        
+    }
+    /*Kampanjeseksjon slutter*/
 
 
 

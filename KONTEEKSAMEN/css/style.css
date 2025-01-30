@@ -97,7 +97,7 @@
         font-weight: bold;
         font-size: xx-large;
     }
-    .kampanjeteksth2{
+    .kampanjetekst h2{
         font-weight: bold;
         font-size: xx-large;
     }
@@ -113,16 +113,204 @@
         box-sizing: border-box;
         width: 80%;
     }
-    #bestill{
+    .kampanje a{
         background-color: #ffcc00;
         color: #252525;
         padding: 10px;
         font-size: 15px;
         font-weight: bold;
         border-radius: 7px;
+        text-decoration: none;
         
     }
     /*Kampanjeseksjon slutter*/
+
+
+
+
+    /*Tilbudsseksjon starter*/
+    .tilbuder{
+        gap: 1rem; 
+        max-width: 100%;
+        margin-left: 5px;
+        margin-left: 5px;
+    }
+
+    .scroll_tilbuder{
+        display: flex;
+        gap: 1rem;
+        overflow: auto;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .scroll_tilbuder article{
+        min-width: 290px;
+        width: 100%;
+        padding: 30px;
+        box-shadow: 5px 5px 5px 5px #b4afaf;
+        border-radius: 5px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+
+    }
+    .scroll_tilbuder article h3{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .scroll_tilbuder article a{
+        text-decoration: none;       
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        color: #237fe1;
+    }
+
+    /*Tilbudsseksjon slutter*/
+
+
+    /*Tips og inspirasjon starter*/
+    .inspirasjon{
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .artikler article{
+        box-shadow: 5px 5px 5px 5px #b4afaf;
+        border-radius: 30px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .artikler article img{
+        height: 100%;
+        position: relative;
+        display: flex;
+        border-radius: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .artikler h3{
+        font-size: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10px;
+    }
+    .artikler p{
+        font-weight: lighter;
+        font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10px;
+    }
+    .artikler a{
+        text-decoration: none;
+        color: #252525;
+        font-size: 18px;
+        display: flex;
+        gap: 0.5rem;
+        margin-left: 10px;
+    }
+
+    /*Tips og inspirasjon slutter*/
+
+    
+
+
+
+
+
+    /*Hottell side starter*/
+    .hotell_banner{
+        width: 100%;
+        max-width: 500px;
+        margin-left: 0px;
+ 
+    }
+    .scroll_banner{
+        display: flex;
+        width: 100%;
+        overflow: auto;
+    }
+
+    .scroll_banner article{
+        display: flex;
+    }
+
+    .scroll_banner img{
+        max-width: 100%;
+    }
+    .hotell_banner{
+        max-width: 100%;
+    }
+    .hotell_banner nav{
+        width: 100%;
+    }
+    .hotell_banner nav ul{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        
+       
+    }
+    .hotell_banner nav ul li{
+        list-style: none;
+        
+    }
+    .hotell_banner nav ul li a{
+        text-decoration: none;
+        color: #252525;
+        font-size: 20px;
+    }
+    
+
+    
+    .hotell_layout{
+        padding: 20px;
+    }
+    
+
+    .fa-sun{
+        color:#efc418;
+        font-size: 20px;
+    }
+
+    #review{
+        background-color: rgb(78, 231, 78);
+        color: #fff;
+        width: 100%;
+        max-width: 6%;
+        padding: 5px;
+        font-size: 20px;
+    }
+    #text-review{
+        font-size: 20px;
+    }
+    .hotell_layout{
+        list-style: none;
+    }
+    .hotell_layout a{
+        text-decoration: none;
+        color: #237fe1;
+    }
+
+    .fasiliteter nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        min-width: 200px;
+    }
+
+    .fasiliteter nav ul li{
+        list-style: none;
+    }
+    /*Hotell side slutter*/
+
+
+
+
+
 
 
 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--linker til css ark med ikoner starter-->
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="ikoner/css/brands.css" rel="stylesheet">
+    <link href="ikoner/css/solid.css" rel="stylesheet">
+    <link href="ikoner/css/regular.css" rel="stylesheet">
+    <!--linker til css ark med ikoner slutter-->
+    <title>Bestill tilbud</title>
+    <!--linker til selv css til nettsted starter-->
+    <link href="css/style.css" rel="stylesheet">
+    <!--linker til selv css til nettsted slutter-->
+</head>
+<body>
+    
+    <section class="din_valg">
+        <h2>Din valg</h2>
+        <img src="img/landscape-2016308_640.jpg" alt="bilde av landskap">
+        <h3>Parga Beach</h3>
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-regular fa-sun"></i>
+        <ul>
+            <li><i class="fa-solid fa-location-dot"></i>Hellas, Parga</li>
+            <li><i class="fa-solid fa-calendar-days"></i>Man 5 mai - man 12 mai 2025</li>
+            <li><i class="fa-solid fa-person"></i>2 Voksne</li>
+            <li><i class="fa-solid fa-bed"></i>Deluxerom, Balkong og ikke spesifisert utsikt</li>
+            <li><i class="fa-solid fa-utensils"></i>Frokostbuffe</li>
+            <li><i class="fa-solid fa-plane-departure"></i>Oslo Lufthavn - Preveza</li>
+        </ul>
+        <hr>
+        <h3 id="ordinært_pris">22 003,-</h3>
+        <h3 id="rabatt_pris">19 803,-</h3>
+    </section>
+
+    <section class="bestill_sted">
+        <h2>Oppgi dine bestillingsopplysinnger</h2>
+        <form class="bestill">
+            <fieldset class="bestill_seksjon">
+                <legend class="kunde">Voksen 18+ hovedbestiller</legend>
+                <label for="fornavn">Fornavn (ifølge pass):</label>
+                <input type="text" id="fornavn" name="fornavn" required>
+                
+                <label for="etternavn">Etternavn (ifølge pass):</label>
+                <input type="text" id="etternavn" name="etternavn" required>
+                
+
+                <label>Fødselsdato:</label>
+                <input type="number" id="day" name="day" min="1" max="31" placeholder="DD" required> 
+                <input type="number" id="month" name="month" min="1" max="12" placeholder="MM" required>
+                <input type="number" id="year" name="year" min="1950" max="2025" placeholder="ÅÅÅÅ" required>
+                
+                <p>Kjønn</p>
+                <label>Kvinne</label>
+                <input type="radio" id="kvinne" name="valg">
+
+                <label>Mann</label>
+                <input type="radio" id="mann" name="valg">                   
+                
+                <label>E-postadresse:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Poststed</label>
+                <input type="number" id="poststed" name="poststed" required>
+
+                <label>Land:</label>
+                <input type="text" id="land" name="land" placeholder="Skriv land" maxlength="50">
+            </fieldset>
+
+            <fieldset class="bestill_seksjon">
+                <legend class="kunde">Voksen 18+</legend>
+                <label for="fornavn">Fornavn (ifølge pass):</label>
+                <input type="text" id="fornavn2" name="fornavn" required>
+                
+                <label for="etternavn">Etternavn (ifølge pass):</label>
+                <input type="text" id="etternavn2" name="etternavn" required>
+                
+
+                <label>Fødselsdato:</label>
+                <input type="number" id="day2" name="day" min="1" max="31" placeholder="DD" required> 
+                <input type="number" id="month2" name="month" min="1" max="12" placeholder="MM" required>
+                <input type="number" id="year2" name="year" min="1950" max="2025" placeholder="ÅÅÅÅ" required>
+                
+                <p>Kjønn</p>
+                <label>Kvinne</label>
+                <input type="radio" name="valg">
+
+                <label>Mann</label>
+                <input type="radio" name="valg">                   
+            </fieldset>
+            <button type="submit" id="siste_trinnn">Siste trinn <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+    </section>
+</body>
+</html>

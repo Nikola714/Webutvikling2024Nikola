@@ -378,6 +378,212 @@
 
 
 
+
+
+
+    /*Order side starter*/
+    .kunde{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 8px;
+    }
+
+    .bestill{
+        max-width: 600px;
+        padding: 10px;
+        background-color: #dadada;
+        border-radius: 10px;
+
+    }
+    .bestill_seksjon{
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .bestill_seksjon label{
+        text-transform: uppercase;
+        display: block;
+        margin: 8px 5px;
+    }
+    #fornavn{
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    #etternavn{
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    #email{
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    #day{
+        width: 15%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    #month{
+        width: 15%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    #year{
+        width: 19%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #dbd5d5;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    .bestill p{
+        text-transform: uppercase;
+    }
+ 
+    #siste_trinnn{
+        background-color: #ffcc00;
+        color: #252525;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 7px;
+    }
+
+    #poststed{
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    #land{
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    #fornavn2{
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    #etternavn2{
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    #email2{
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    #day2{
+        width: 15%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    #month2{
+        width: 15%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    #year2{
+        width: 19%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+
+    .din_valg img{
+        height: 100%;
+        position: relative;
+        display: flex;
+        border-radius: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .din_valg{
+        box-shadow: 5px 5px 5px 5px #5d5f5f;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: #daecef;
+    }
+
+    .din_valg ul{
+        margin: 0;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .din_valg ul li{
+        list-style: none;
+    }
+    .din_valg ul li i{
+        padding: 10px;
+    }
+    .bestill_sted h2{
+        font-size: 25px;
+        padding: 20px;
+    }
+    #ordinært_pris{
+        color: #a8aaaa;
+        text-decoration: line-through;
+    }
+    #rabatt_pris{
+        color: rgb(238, 30, 30);
+    }
+    /*Order side slutter*/
+
+
+
+
+
+
+
+
+
+
     /*footer starter*/
     #footer{
         width: 100%;

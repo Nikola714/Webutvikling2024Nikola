@@ -1,3 +1,4 @@
+
 /*MOBIL VERSJON STARTER*/
 
     /*toppområde starter*/
@@ -741,7 +742,18 @@
         max-width: 100%;
         width: 90px;
     }
-    
+    .din_valg{
+        width: 40%;
+        display: inline-block;
+        display: inline-block;
+        vertical-align: top;
+        padding: 50px;
+    }
+    .bestill_sted{
+        width: 40%;
+        display: inline-block;
+        padding: 50px;
+    }
     /*toppområde slutterr*/
 
     /*andre starter*/
@@ -776,6 +788,178 @@
     }
     
     /*andre sluter*/
+
+    .rom_seksjon article{
+        width: 30%;
+        display: inline-block;
+        padding: 50px;
+        margin: 20px;
+    }
+    #google_maps a img{
+        height: 300px;
+        position: relative;
+        display: flex;
+        border-radius: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 500px;
+        margin: 40px;
+    }
+    .fasiliteter nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: space-between;
+    }
+    .scroll_banner{
+        display: flex;
+        width: 89%;
+        overflow: auto;
+    }
+    .artikler article{
+        box-shadow: 5px 5px 5px 5px #b4afaf;
+        border-radius: 30px;
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 30%;
+        display: inline-block;
+    }
+    .artikler article img{
+        height: 100%;
+        position: relative;
+        display: flex;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .inspirasjon{
+        position: relative;
+        margin-bottom: 50px;
+    }
+    #footer{
+        width: 100%;
+        max-width: 100%;
+        background-color: #252525;
+    }
+    .flags{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;   
+        padding: 5px; 
+        width: 100%;
+    }            
+                
+            
+    .flags p img {
+        max-width: 80%;
+    }
+    .flags p{
+        color: #fff;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 18px;
+                    
+    }
+    .overskrift{
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 30px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    #reisegavekort a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 30px;
+        font-weight: lighter;
+        margin-left: 30px;
+    }
+            
+    .betalingsmetoder{
+        color: #fff;
+        margin-left: 20px;
+    }
+            
+    .betalingsmetoder i{
+        font-size: 30px;
+        padding: 5px;
+    }
+    .betalingsmetoder section i{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
+    .meld_seg{
+        margin: 10px 40px 10px 10px;
+        color: #fff;
+        padding: 30px;
+        font-size: 30px;
+    }
+    .email_ekempel{
+        padding: 10px;
+    }
+    #send{
+        background-color: #ffcc00;
+        color: #252525;
+        padding: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        border-radius: 7px;
+    }                
+
+    .kundeservice nav ul li{
+        list-style: none;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .kundeservice nav ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+
+    .sosialemedier ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: flex-start;   
+        margin-left: 30px;
+        padding: 0;
+        
+
+    }
     
+    .sosialemedier li{
+        list-style: none;
+
+    }
+
+    .sosialemedier a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .sosialemedier i{
+        font-size: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .kampanje a {
+        position: absolute;
+        bottom: 30px;
+  
+        font-size: 20px;
+        align-items: center;
+    }    
 }
 /*DESKOPT VERSJON SLUTTER*/
